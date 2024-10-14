@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Monda:wght@400..700&display=swap');
+
+
+:root {
+  /* Tipografía */
+  --font-primary: 'Monda', sans-serif;
+
+  /* Colores principales de la UI */
+  --color-primary: #06b6d4; /* Azul vibrante: moderno, profesional */
+  --color-secondary: #FF7A59; /* Naranja brillante: amigable, llamativo */
+  
+  /* Colores de fondo y texto */
+  --background-color: #F5F5F5; /* Color de fondo suave */
+  --text-color: #333333; /* Color de texto oscuro para una mejor legibilidad */
+  
+  /* Colores de acento y para hover */
+  --color-accent: #0e7490; /* Azul oscuro para hover o estados activos */
+  --color-hover: #FF603C; /* Naranja más intenso para efectos de hover */
+  
+  /* Colores de sombra y bordes */
+  --shadow-color: rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  --border-color: #E0E0E0; /* Color de bordes suaves */
+}
+
+.nav-link {
+  font-family: var(--font-primary);
+}
+
+body {
+  font-family: var(--font-primary) !important;
+  color: var(--text-color) !important;
+  background-color: var(--background-color) !important;
+  line-height: 1.6 !important;
+  margin: 0 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-primary) !important;
+  margin: 0 0 20px !important;
+}
+
+a {
+  color: var(--color-primary) !important;
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: var(--color-hover) !important;
+}
+
+
+button:hover {
+  background-color: var(--color-accent);
+}
+
+.container {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 20px !important;
+}
+
+.card {
+  background-color: white;
+  box-shadow: 0 4px 6px var(--shadow-color);
+  border: 1px solid var(--border-color);
+  padding: 20px;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 12px var(--shadow-color) !important;
+}
+
+
+
+
+/* CSS RESET */
+*{ margin:0; padding:0;}
+*, *::before, *::after {box-sizing: border-box;}
+
+body{
+  min-height: 100dvh;
+}
+input, button, textarea, select {font:inherit;}
+
+p{ text-wrap:pretty;}
+h1,h2,h3,h4,h5,h6 {text-wrap: balance;}
+
+img,video,svg {height: auto; max-width: 100%;}
+/*============================================================*/
+
+@media (min-width: 992px) {
+    .navbar-expand-md {
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      padding-left: 300px !important;
+      padding-right: 300px !important;
+      
+    }
+
+  }
+
+  .sticky {
+    position: sticky !important;
+}
